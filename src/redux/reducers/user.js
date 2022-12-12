@@ -1,3 +1,4 @@
+import { LOGIN } from '../actions';
 // Esse reducer será responsável por tratar as informações da pessoa usuária
 const INITAL_STATE = {
   user: {
@@ -12,7 +13,10 @@ const INITAL_STATE = {
 
 const user = (state = INITAL_STATE, action) => {
   switch (action.type) {
-  default: return state;
+  case LOGIN:
+    return action.value;
+  default:
+    return state;
   }
 };
 
