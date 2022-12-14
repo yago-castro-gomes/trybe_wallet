@@ -11,13 +11,13 @@ const INITAL_STATE = {
     idToEdit: 0, // valor numérico que armazena o id da despesa que esta sendo editada
   } };
 
-const user = (state = INITAL_STATE, action) => {
+const userReducer = (state = INITAL_STATE, action) => {
   switch (action.type) {
   case LOGIN:
-    return action.value;
+    return action.email;
   default:
     return state;
   }
 };
 
-export default user;
+export default userReducer;

@@ -2,7 +2,7 @@
 
 export const LOGIN = 'LOGIN';
 
-export const login = (value) => ({
+export const login = (email) => ({
   type: LOGIN,
-  value,
+  email,
 });
