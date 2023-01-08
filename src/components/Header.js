@@ -20,12 +20,9 @@ class Header extends Component {
   }
 }
 
-const mapStateToProps = (state) => {
-  console.log(state);
-  return {
-    email: state.user.email,
-  };
-};
+const mapStateToProps = (state) => ({
+  email: state.user.email,
+});
 
 Header.propTypes = {
   email: PropTypes.string.isRequired,
