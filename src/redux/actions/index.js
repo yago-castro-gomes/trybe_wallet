@@ -2,13 +2,19 @@
 
 export const LOGIN = 'LOGIN';
 export const CURRENCIES = 'CURRENCIES';
+export const EXPENSE = 'EXPENSE';
 
 export const login = (email) => ({
   type: LOGIN,
-  email,
+  payload: email,
 });
 
 export const curr = (currencies) => ({
   type: CURRENCIES,
-  currencies,
+  payload: currencies,
+});
+
+export const expensesReducer = (state) => ({
+  type: EXPENSE,
+  payload: state,
 });
