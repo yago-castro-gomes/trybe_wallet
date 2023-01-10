@@ -3,6 +3,7 @@
 export const LOGIN = 'LOGIN';
 export const CURRENCIES = 'CURRENCIES';
 export const EXPENSE = 'EXPENSE';
+export const REMOVEEXPENSE = 'REMOVEEXPENSE';
 
 export const login = (email) => ({
   type: LOGIN,
@@ -16,5 +17,10 @@ export const curr = (currencies) => ({
 
 export const expensesReducer = (state) => ({
   type: EXPENSE,
+  payload: state,
+});
+
+export const removeExp = (state) => ({
+  type: REMOVEEXPENSE,
   payload: state,
 });
